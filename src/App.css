@@ -55,10 +55,12 @@
 
 .pfp {
   width: 40%;
+  cursor: pointer;
 }
 
 .cart {
   width: 16%;
+  cursor: pointer;
 }
 
 .product-container {
@@ -80,11 +82,39 @@
   margin-bottom: 4%;
 }
 
-.img-container img {
+.img-container div {
   width: 20%;
   height: same-as-width;
   border-radius: 10%;
+  border-color: hsl(26, 100%, 55%);
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-container img:hover {
+  opacity: 0.5;
+}
+
+.active-img {
+  opacity: 0.5;
+}
+
+.active-div {
+  border: solid 4px hsl(26, 100%, 55%);
+}
+
+.main-img::before {
+  content: "";
+  position: absolute;
+  background-color: blue;
+  width: 200%;
+  height: 200%;
 }
 
 .img-container {
@@ -205,7 +235,7 @@
 .product-info h1 {
   text-transform: capitalize;
   font-size: 4rem;
-  opacity: 90%;
+  opacity: 0.9;
   font-weight: 700;
 }
 
@@ -225,8 +255,8 @@
 }
 
 .star-filled {
-  fill: yellow;
-  stroke: yellow;
+  fill: rgb(255, 195, 0);
+  stroke: rgb(255, 195, 0);
   width: 30px;
   height: 30px;
 }
@@ -235,7 +265,7 @@
   stroke-width: 2.5px;
   width: 30px;
   height: 30px;
-  stroke-opacity: 90%;
+  stroke-opacity: 0.9;
 }
 
 .stars-container h3 {
@@ -246,7 +276,7 @@
 
 .price-container div h2 {
   font-size: 2.5rem;
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 .price-container div h3 {

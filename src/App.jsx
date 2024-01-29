@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
-// import { product } from "../project-files/data.js";
+import Navbar from "./Navbar";
+import ProductPhotos from "./ProductPhotos";
 
 function App() {
   const starFilled = (
@@ -39,38 +40,9 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <ul className="navbar-items">
-            <img src="../project-files/assets/logo.svg" />
-            <li>collections</li>
-            <li>men</li>
-            <li>women</li>
-            <li>about</li>
-            <li>contact</li>
-          </ul>
-          <div className="cart-pfp">
-            <img src="../project-files/assets/icon-cart.svg" className="cart" />
-            <img
-              src="../project-files/assets/image-avatar.png"
-              className="pfp"
-            />
-          </div>
-        </div>
-      </nav>
+      <Navbar />
       <div className="product-container">
-        <div className="product-photos">
-          <img
-            src="../project-files/assets/image-product-1.jpg"
-            className="main-img"
-          />
-          <div className="img-container">
-            <img src="../project-files/assets/image-product-1.jpg" />
-            <img src="../project-files/assets/image-product-2.jpg" />
-            <img src="../project-files/assets/image-product-3.jpg" />
-            <img src="../project-files/assets/image-product-4.jpg" />
-          </div>
-        </div>
+        <ProductPhotos />
         <div className="product-info">
           <h6>sneaker company</h6>
           <h1>fall limited edition sneakers</h1>
