@@ -173,7 +173,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .checkout-btn:hover {
@@ -335,6 +335,7 @@
 
 .addtocart-container div h4 {
   font-size: 1.5rem;
+  opacity: 0.9;
 }
 
 .addtocart-btn {
@@ -344,7 +345,8 @@
   align-items: center;
   gap: 10%;
   width: 60%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   border: none;
   border-radius: 10px;
   background-color: hsl(26, 100%, 55%);
@@ -399,6 +401,7 @@
   width: 30px;
   height: 30px;
   stroke-opacity: 0.9;
+  stroke: hsl(220, 13%, 13%);
 }
 
 .stars-container h3 {
@@ -424,4 +427,77 @@
   font-size: 1.3rem;
   color: hsl(220, 14%, 75%);
   text-decoration: line-through;
+}
+
+.reviews-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.reviews-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.reviews-header button {
+  width: 22%;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1.5% 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reviews-header button:hover {
+  background-color: hsl(26, 100%, 70%);
+}
+
+.reviews-header h1 {
+  font-size: 2.5rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.review {
+  display: flex;
+  margin-bottom: 4%;
+  width: 60%;
+}
+
+.review img {
+  height: 48px;
+  margin-right: 3%;
+}
+
+.stars {
+  margin-bottom: 2%;
+}
+
+.stars span {
+  margin-right: 1%;
+}
+
+.review-info h3,
+.review-info h4 {
+  margin-bottom: 2%;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.review-info p {
+  color: hsl(219, 9%, 45%);
 }
