@@ -79,6 +79,7 @@ const ProductReviews = () => {
       productObj.reviews.splice(0, 0, newReview);
 
       setProductReviewed(true);
+      setStarRated(true);
     } else {
       setStarRated(false);
     }

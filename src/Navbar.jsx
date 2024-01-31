@@ -42,10 +42,13 @@ const Navbar = ({ cart, setCart }) => {
                         />
                         <div className="item-name-price">
                           <h5>{item.productName}</h5>
-                          <h6>{`${item.productPrice} x ${item.productAmount} $${
-                            parseInt(item.productPrice.slice(1, -3), 10) *
-                            item.productAmount
-                          }.00`}</h6>
+                          <div>
+                            <h6>{`${item.productPrice} x ${item.productAmount}`}</h6>
+                            <h5>{`$${
+                              parseInt(item.productPrice.slice(1, -3), 10) *
+                              item.productAmount
+                            }.00`}</h5>
+                          </div>
                         </div>
                         <img
                           className="cart-delete"
