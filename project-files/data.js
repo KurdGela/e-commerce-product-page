@@ -2,7 +2,7 @@ export const assetsBaseUrl =
   "res.cloudinary.com/dc2c49xov/image/upload/v1703352357/ecommerce-page";
 
 export const loggedInUser = {
-  name: "Ryan Welles",
+  name: "John Doe",
   profileImage: "image-avatar.png",
 };
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap");
 
 * {
   font-family: "Kumbh Sans", sans-serif;
@@ -475,7 +475,7 @@
 .review {
   display: flex;
   margin-bottom: 4%;
-  width: 60%;
+  width: 70%;
 }
 
 .review img {
@@ -485,10 +485,16 @@
 
 .stars {
   margin-bottom: 2%;
+  width: 100%;
 }
 
 .stars span {
   margin-right: 1%;
+}
+
+.review-info {
+  width: 100%;
+  position: relative;
 }
 
 .review-info h3,
@@ -500,4 +506,138 @@
 
 .review-info p {
   color: hsl(219, 9%, 45%);
+}
+
+.add-review {
+  width: 70%;
+}
+
+.add-review form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.add-review h1 {
+  margin-bottom: 5%;
+  font-size: 2.4rem;
+  opacity: 0.9;
+}
+
+.review-btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.review-btn-container button {
+  padding: 2.5% 0;
+  width: 18%;
+  border: none;
+  background-color: hsl(0, 0%, 75%);
+  border-radius: 10px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-btn-container button:nth-child(1):hover {
+  background-color: hsl(0, 0%, 65%);
+}
+
+.review-btn-container button:nth-child(2) {
+  margin-left: 4%;
+  background-color: hsl(26, 100%, 55%);
+}
+
+.review-btn-container button:nth-child(2):hover {
+  background-color: hsl(26, 100%, 70%);
+}
+
+.review-input-container label,
+.review-input-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5%;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.review-input-container div {
+  margin-bottom: 1.5%;
+}
+
+.review-input-container input {
+  padding: 1.5%;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 70%);
+  margin-bottom: 1.5%;
+}
+
+.review-input-container input::placeholder {
+  font-size: 1rem;
+  color: hsl(0, 0%, 70%);
+}
+
+.error {
+  color: red;
+}
+
+.review-input-container:nth-child(3) input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 15%;
+}
+
+.review-input-container div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2%;
+}
+
+.review-input-container div span {
+  display: flex;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.review-input-container div span .star,
+.review-input-container div span .star-filled {
+  height: 100%;
+  width: 100%;
+}
+
+.submitting {
+  opacity: 0.5;
+}
+
+.review-modify {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+}
+
+.review-modify h4 {
+  text-transform: capitalize;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.review-modify h4:nth-child(2) {
+  margin-left: 20%;
 }
